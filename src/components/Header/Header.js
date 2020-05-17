@@ -3,7 +3,7 @@ import styles from "./Header.module.css"
 import Clock from "react-live-clock"
 import Progress from '../ProgressBar/ProgressBar'
 
-//Header container: it will receive two props: the name of the city, and the temperature. For the clock i used the react-live clock component from node.
+//Header container: it will receive two props: the name of the city and the temperature. For the clock I used the react-live clock component from node.
  const Header = ({data:{name, temp}}) => {
      
      

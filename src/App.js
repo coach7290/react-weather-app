@@ -9,31 +9,31 @@ import Cards from "./components/Cards/Cards";
 
 function App() {
 
-  //Declaring two UseState that will hold the data fetched from the Api
+  //Declaring two UseState that will hold the data fetched from the API
 
   const[currentWeather, setCurrentWeather]= useState({});
   const[futureWeather, setFutureWeather]= useState([]);
 
 
-  //Inside this useEffect state i will retrieve and call the fetch data function i declared in the index.js file. Those functions will be called inside a setInterval  to refresh the data every minute.
+  //Inside this useEffect state I will retrieve and call the fetch data function I declared in the index.js file. Those functions will be called inside a setInterval  to refresh the data every minute.
   useEffect(() => {
     const currentData = async () => {
       const currentWeatherData = await fetchCurrentData();
 
       setCurrentWeather(currentWeatherData);
-      //const intervalIds= setInterval(() => {
-        //currentData();
+      const intervalIds= setInterval(() => {
+        currentData();
         
-      //}, 10000000);
+      }, 60000);
     };
 
     const futureData = async () => {
       
       setFutureWeather( await fetchFutureData())
       console.log(futureWeather);
-      //const intervalId= setInterval(() => {
-        //futureData();
-      //}, 10000000);
+      const intervalId= setInterval(() => {
+        futureData();
+      }, 60000);
       
 
       
@@ -60,9 +60,9 @@ function App() {
   return (
     <div className={styles.container}>
       <Header data={currentWeather}/>
-      {futureWeather.modifiedData && futureWeather.modifiedData.map(({day,temp,icon,description})=>{
+      {futureWeather.modifiedData && futureWeather.modifiedData.map(({day,temp,icon,description, index})=>{
         return(
-          <Cards day={day} temp={temp} icon={icon} description={description}/>
+          <Cards key={index} day={day} temp={temp} icon={icon} description={description}/>
         )
       })}
 

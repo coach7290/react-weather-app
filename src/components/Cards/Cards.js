@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from "./Cards.module.css";
 
-// Card component. It will accept 4 props: the day of the fetched weather, the temperature, the description and the icon. The icons are dynamically fetched from a provided Url (string concatenation)
+// Card component. It will accept 4 props: the day of the fetched weather, the temperature, the description and the icon. The icons are dynamically fetched from a provided URL (string concatenation)
 
  const Cards = ({day, temp, description, icon}) => {
 
-   //using the method toLocaleString along with the option format, helped me to find a quick way to report the day of the week from the date format dd/mm/yyyy
+   //Using the method toLocaleString along with the option format, helped me to find a quick way to report the day of the week from the date format dd/mm/yyyy
    let days=  new Date(day).toLocaleString('en-us', {weekday:'short'});
    
    
