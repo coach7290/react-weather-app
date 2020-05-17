@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 30px;
+	width: 100%
+}
+
+.progressBar {
+	background: linear-gradient(to left,#dd9214, #ecc480);
+	
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 1;
+	
+}
+
+.container{
+	color: #fff;
+	margin-left: 10px;
+	margin-right: 10px;
+}

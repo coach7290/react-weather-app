@@ -1,0 +1,116 @@
+.container{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #31343d;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    align-items: center;
+}
+
+.content h2:first-child{
+    text-transform: uppercase;
+}
+
+.clock {
+
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clock p{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+div .dot:first-child{
+     height: 10px;
+    width: 8px;
+    background-color: #dd9214;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+div .dot:nth-child(2){
+    height: 10px;
+    width: 8px;
+    background-color: #dd9214;
+    opacity: 0.6;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+div .dot:nth-child(3){
+    height: 10px;
+    width: 8px;
+    background-color: #dd9214;
+    opacity: 1;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+
+
+    
+  .dots_f{
+    height: 10px;
+    width: 8px;
+    background-color: #dd9214;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin-right: 2px;
+
+}
+
+    
+.dots_s{
+    height: 10px;
+    width: 8px;
+    background-color: #dd9214;
+    opacity: 0.6;
+    border-radius: 50%;
+    margin-right: 2px;
+
+}
+
+    
+.dots_t{
+    height: 10px;
+    width: 8px;
+    background-color: #dd9214;
+    opacity: 1;
+    border-radius: 50%;
+    margin-right: 2px;
+
+}
+
+
+
+
+
+
+.time{
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

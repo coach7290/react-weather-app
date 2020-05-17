@@ -1,0 +1,47 @@
+.container{
+    
+    background-color: #5f6064;
+    width: 99%;
+    display: flex;
+    margin: 3px auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.content {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    margin-right: 58px;
+    
+}
+
+.info{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+.info img {
+    max-width: 100%;
+    
+}
+

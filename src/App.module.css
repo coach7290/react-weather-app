@@ -1,0 +1,23 @@
+.container{
+
+    max-width: 1444px;
+    display: flex;
+    flex-direction: column;
+
+
+
+    
+    
+   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-color: #101012;
+    font-family: 'Barlow Condensed', sans-serif;
+    
+    
+
+}
