@@ -1,1 +1,3 @@
 
+I made this App trying to follow all the rules addressed by the test. The main purpose of this app is to fetch data from the Open weather API and showing them inside a React application. The application will show the current weather and the forecast for the next five days. With more time available I would have tried to improve the animations, making the progress bar smoother along with temperatures pop-up at each refresh. I would have also implemented accordion modal on click for each card to show more detailed informations(the API can show informations regarding three different hours during the day). 
+
