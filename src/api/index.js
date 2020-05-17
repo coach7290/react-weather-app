@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // Declaring URL variables (one for the current weather and one for the 5-days forecast)
-const currentWeather = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=bd3ac356b99841462eae1399b704c2c1&units=metric";
-const futureWeather =  "http://api.openweathermap.org/data/2.5/forecast?q=London&appid=bd3ac356b99841462eae1399b704c2c1&units=metric";
+const currentWeather = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=5923c8239630ee379c4c527f38b35458&units=metric";
+const futureWeather =  "http://api.openweathermap.org/data/2.5/forecast?q=London&appid=5923c8239630ee379c4c527f38b35458&units=metric";
 
 // Function that fetch the current weather using axios with async/await method
 export const fetchCurrentData = async ()=>{

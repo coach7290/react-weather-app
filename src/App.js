@@ -23,7 +23,7 @@ function App() {
       setCurrentWeather(currentWeatherData);
       const intervalIds= setInterval(() => {
         currentData();
-        
+        clearInterval(intervalIds)
       }, 60000);
     };
 
@@ -33,6 +33,9 @@ function App() {
       console.log(futureWeather);
       const intervalId= setInterval(() => {
         futureData();
+        clearInterval(intervalId)
+        
+        
       }, 60000);
       
 
@@ -48,10 +51,12 @@ function App() {
 
     
     
-
+     
 
     
   }, []);
+
+
 
 
 
